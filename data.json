@@ -1,0 +1,63 @@
+{
+  "products": [
+    {
+      "id": "ath-001",
+      "name": "Aesthetics Premium Comfort Shirt",
+      "brand": "Athenix",
+      "category": "Apparel",
+      "tags": ["New Collection", "Breathable", "Cotton"],
+      "description": "Breathable fabric, perfect for casual and formal wear. Made from 100% premium cotton with a modern fit.",
+      "base_price": 2999,
+      "discounted_price": 1499,
+      "currency": "INR",
+      "rating": {
+        "score": 4.5,
+        "review_count": 128
+      },
+      "images": {
+        "main": "assets/blue_shirt.png",
+        "thumbnails": [
+          "assets/blue_shirt.png",
+          "assets/peach_shirt.png",
+          "assets/white_shirt.png",
+          "assets/olive_shirt.png"
+        ]
+      },
+      "variants": [
+        {
+          "color": "Blue",
+          "hex": "#3B4A69",
+          "image": "assets/blue_shirt.png",
+          "stock": 15,
+          "sizes": ["S", "M", "L", "XL"]
+        },
+        {
+          "color": "Peach",
+          "hex": "#CA896D",
+          "image": "assets/peach_shirt.png",
+          "stock": 8,
+          "sizes": ["M", "L"]
+        },
+        {
+          "color": "White",
+          "hex": "#FFFFFF",
+          "image": "assets/white_shirt.png",
+          "stock": 0,
+          "sizes": ["S", "M", "L", "XL"]
+        },
+        {
+          "color": "Olive",
+          "hex": "#695C3A",
+          "image": "assets/olive_shirt.png",
+          "stock": 12,
+          "sizes": ["L", "XL"]
+        }
+      ],
+      "specs": {
+        "material": "100% Cotton",
+        "fit": "Regular Fit",
+        "wash_care": "Machine wash cold"
+      }
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Iosevka+Charon+Mono:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+NZ+Basic:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  text-decoration: none;
+  list-style-type: none;
+  transition: 0.5s ease-in-out;
+}
+nav {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  background-color: #f3d9b1;
+  margin: 0 auto;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo {
+  background-color: #c33149;
+  color: #fff;
+  padding: 10px;
+  font-size: 20px;
+}
+nav .navlinks {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+}
+nav .navlinks li a {
+  color: #000;
+  font-size: 14px;
+}
+.cart-item-count {
+  background-color: #c33149;
+  padding: 4px 8px;
+  border-radius: 50%;
+  color: #fff;
+  font-weight: bolder;
+  display: none;
+}
+.container {
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  justify-content: center;
+  background-color: #f3d9b1;
+  margin: auto;
+  gap: 20px;
+  padding: 10px;
+}
+.main-img-container {
+  overflow: hidden;
+}
+.main-img-container .active-image {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+  transition: 0.8s ease-in;
+  cursor: zoom-in;
+}
+
+.product-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  margin: 8px 0;
+}
+.product-options img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center;
+  cursor: pointer;
+}
+.right .brand-tag {
+  background-color: #c33149;
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.right .product-name h4 {
+  color: #0d1321;
+  font-size: 18px;
+  font-weight: bolder;
+}
+.right .product-name .description {
+  letter-spacing: 2px;
+}
+.right .price {
+  display: flex;
+  gap: 20px;
+}
+.right .price .old-price {
+  text-decoration: solid 1px line-through;
+}
+.right .price .current-price,
+.old-price {
+  font-size: 20px;
+}
+.right .button-group {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 0 0;
+  gap: 8px;
+}
+.right .button-group .buy-btn {
+  padding: 10px;
+  outline: none;
+  border: none;
+  font-size: 14px;
+  font-weight: bolder;
+  transition: 0.5s ease-in;
+}
+.right .product-name .description {
+  width: 100%;
+  max-width: 500px;
+}
+.right .button-group .buy-btn:hover {
+  background-color: #3a5a40;
+  color: #fff;
+  cursor: pointer;
+}
+.right .button-group .buy-btn.clicked {
+  background-color: #3a5a40;
+  color: #fff;
+  cursor: pointer;
+}
+.varients {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.varients .color {
+  display: flex;
+  gap: 8px;
+  margin: 10px 0 0 0;
+}
+.varients .color span {
+  height: 20px;
+  width: 20px;
+  padding: 4px 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.varients .color span:nth-child(1) {
+  background-color: #3b4a69;
+}
+.varients .color span:nth-child(2) {
+  background-color: #ca896d;
+}
+.varients .color span:nth-child(3) {
+  background-color: #ffffff;
+}
+.varients .color span:nth-child(4) {
+  background-color: #695c3a;
+}
+.button-group .size {
+  background-color: #ffffff37;
+  border-radius: 6px;
+  border: solid 1px #00000052;
+}
+.button-group .size span {
+  padding: 10px 10px;
+  display: inline-block;
+  border-right: solid 1px #00000052;
+}
+.button-group .size span:last-child {
+  border-right: none;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.button-group .size span:first-child {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.button-group .size span.selected {
+  padding: 10px 10px;
+  display: inline-block;
+  background-color: #ffffffaa;
+}
+
+@media (max-width: 790px) {
+  .container {
+    flex-wrap: wrap;
+    overflow: hidden;
+  }
+  .main-img-container .active-image {
+    width: 300px;
+    height: 300px;
+  }
+}
+/***************************************************
+Below Mentaied CSS, Related With The Cart Section
+***************************************************/
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  overflow-x: scroll;
+}
+.cart-container::-webkit-scrollbar {
+  display: none;
+}
+.cart-container .cart-table {
+  width: 100%;
+  border: 1px solid #3b4a69;
+  background-color: #ffffff37;
+}
+.cart-table thead {
+  margin-bottom: 10px;
+}
+.cart-table thead tr th {
+  padding: 10px;
+  border-bottom: 1px solid #3b4a69;
+}
+.cart-table tbody tr td {
+  padding: 10px;
+  border-bottom: 1px solid #3b4a69;
+}
+.cart-table tbody tr td .product-image {
+  height: 60px;
+  width: 60px;
+  object-position: center;
+  object-fit: cover;
+}
+.cart-table tbody tr td .product-name {
+  font-size: 16px;
+}
+.cart-table tbody tr td .calculations strong {
+  display: inline;
+  text-decoration: #c33149 line-through;
+  color: #0d1321;
+}
+.cart-table tbody tr td .calculations .discount {
+  color: red;
+  text-decoration: none;
+}
+.cart-table tbody tr td .calculations .save span {
+  background-color: #3a5a40;
+  padding: 2px 8px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: bolder;
+}
+.quantity {
+  padding: 8px;
+  width: 80px;
+  outline: none;
+  font-weight: bold;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.cart-table tbody tr td .remove-button {
+  background-color: #c33149;
+  color: #ffffff;
+  outline: none;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.cart-table tfoot tr td .pay-now {
+  background-color: #3a5a40;
+  color: #ffffff;
+  outline: none;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+.empty-cart-message {
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  background-color: #ffffff;
+  padding: 20px;
+}
